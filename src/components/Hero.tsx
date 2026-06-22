@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowDown, CornerDownRight, Play } from "lucide-react";
-import heroImage from "../assets/images/nemesis_hero_profile_1782113632243.jpg";
+import heroImage from "../assets/images/nemesis_hero.webp";
 
 interface HeroProps {
   onOpenConfigurator: () => void;

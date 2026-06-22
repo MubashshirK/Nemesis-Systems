@@ -7,15 +7,15 @@ import {
 import { Hotspot, CustomizationOption } from "../types";
 
 //All images imported 
-import imgFrontChassis from "../assets/images/nemesis_hero_profile_1782113632243.jpg";
-import imgCyberbotHeadset from "../assets/images/CyberBot-headset.png";
-import imgNemesisHeart from "../assets/images/Nemesis-heart.png";
-import imgManipulatorArm from "../assets/images/nemesis_manipulator_arm_1782113680375.jpg";
-import imgHumanController from "../assets/images/human-controller.png";
-import imgSpaceExplorer from "../assets/images/nemesis_space_explorer_1782113701139.jpg";
-import imgNewsFactory from "../assets/images/news_robot_factory_1782113747364.jpg";
-import imgNewsDeepSea from "../assets/images/news_deep_sea_1782113732551.jpg";
-import imgNewsNasa from "../assets/images/news_collab_nasa_1782113717294.jpg";
+import imgFrontChassis from "../assets/images/nemesis_hero.webp";
+import imgCyberbotHeadset from "../assets/images/CyberBot-headset.webp";
+import imgNemesisHeart from "../assets/images/Nemesis-heart.webp";
+import imgManipulatorArm from "../assets/images/nemesis_manipulator_arm.webp";
+import imgHumanController from "../assets/images/human-controller.webp";
+import imgSpaceExplorer from "../assets/images/nemesis_space_explorer.webp";
+import imgNewsFactory from "../assets/images/news_robot_factory.webp";
+import imgNewsDeepSea from "../assets/images/news_deep_sea.webp";
+import imgNewsNasa from "../assets/images/news_collab_nasa.webp";
 
 interface InteractiveShowcaseProps {
   isConfiguratorOpen: boolean;
