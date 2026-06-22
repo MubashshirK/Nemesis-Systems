@@ -465,7 +465,7 @@ export default function InteractiveShowcase({
                   1.2M cycles endurance rated
                 </div>
 
-                <div className="absolute md:bottom-1/4 md:-right-12 -bottom-2 left-1/2 -translate-x-1/2 md:translate-x-0 font-mono text-[9px] md:text-[10px] text-zinc-700 bg-white/95 px-2.5 md:px-3 py-1.5 rounded-lg shadow-md border border-zinc-200 z-20 whitespace-nowrap">
+                <div className="absolute md:bottom-1/4 md:-right-(2/3) -bottom-2 left-2/3 -translate-x-1/2 md:translate-x-0 font-mono text-[9px] md:text-[10px] text-zinc-700 bg-white/95 px-2.5 md:px-3 py-1.5 rounded-lg shadow-md border border-zinc-200 z-20 whitespace-nowrap">
                   <span className="font-bold block text-zinc-950">BIOMETRIC PUMP</span>
                   Carbon fiber reinforced aorta
                 </div>
