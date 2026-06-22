@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowDown, CornerDownRight, Play } from "lucide-react";
+import heroImage from "../assets/images/nemesis_hero_profile_1782113632243.jpg";
 
 interface HeroProps {
   onOpenConfigurator: () => void;
@@ -7,9 +8,6 @@ interface HeroProps {
 }
 
 export default function Hero({ onOpenConfigurator, onOpenVideo }: HeroProps) {
-  // Use the exact saved asset path
-  const heroImageSrc = "/src/assets/images/nemesis_hero_profile_1782113632243.jpg";
-
   return (
     <section id="hero" className="relative min-h-screen bg-zinc-100 flex items-center overflow-hidden pt-20">
       {/* Absolute Large Background Deco Character (Desktop) */}
@@ -118,10 +116,9 @@ export default function Hero({ onOpenConfigurator, onOpenVideo }: HeroProps) {
             {/* The main picture with a gradient mask at the bottom to blend with off-white background */}
             <div className="relative w-full h-full overflow-hidden rounded-3xl border border-white/60 shadow-2xl group">
               <img
-                src={heroImageSrc}
+                src={heroImage}
                 alt="Nemesis X1 Profile Android Close Up"
                 className="w-full h-full object-cover grayscale-[15%] group-hover:scale-105 duration-700 ease-out"
-                referrerPolicy="no-referrer"
               />
               
               {/* Overlay visual layout grid lines for futuristic feeling */}

@@ -6,6 +6,17 @@ import {
 } from "lucide-react";
 import { Hotspot, CustomizationOption } from "../types";
 
+//All images imported 
+import imgFrontChassis from "../assets/images/nemesis_hero_profile_1782113632243.jpg";
+import imgCyberbotHeadset from "../assets/images/CyberBot-headset.png";
+import imgNemesisHeart from "../assets/images/Nemesis-heart.png";
+import imgManipulatorArm from "../assets/images/nemesis_manipulator_arm_1782113680375.jpg";
+import imgHumanController from "../assets/images/human-controller.png";
+import imgSpaceExplorer from "../assets/images/nemesis_space_explorer_1782113701139.jpg";
+import imgNewsFactory from "../assets/images/news_robot_factory_1782113747364.jpg";
+import imgNewsDeepSea from "../assets/images/news_deep_sea_1782113732551.jpg";
+import imgNewsNasa from "../assets/images/news_collab_nasa_1782113717294.jpg";
+
 interface InteractiveShowcaseProps {
   isConfiguratorOpen: boolean;
   onCloseConfigurator: () => void;
@@ -211,10 +222,9 @@ export default function InteractiveShowcase({
               {telemetryView === "front" ? (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <img
-                    src="/src/assets/images/nemesis_hero_profile_1782113632243.jpg"
+                    src={imgFrontChassis}
                     alt="Nemesis Front Chassis Closeup"
                     className="w-full h-full object-cover opacity-70 scale-105 pointer-events-none transition-all duration-700 select-none"
-                    referrerPolicy="no-referrer"
                   />
                   
                   {/* Floating interactive Hotspots */}
@@ -284,10 +294,9 @@ export default function InteractiveShowcase({
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Back mechanics carbon view layout */}
                   <img
-                    src="/src/assets/images/CyberBot-headset.png"
+                    src={imgCyberbotHeadset}
                     alt="CyberBot Headset Interface"
                     className="w-full h-full object-cover opacity-65 scale-102 pointer-events-none transition-all duration-700 select-none animate-pulse"
-                    referrerPolicy="no-referrer"
                   />
 
                   {/* Left Japanese overlay letters */}
@@ -444,10 +453,9 @@ export default function InteractiveShowcase({
                 {/* Centered System Core image */}
                 <div className="relative z-10 w-full h-full transition-transform hover:scale-105 duration-500">
                   <img
-                    src="/src/assets/images/Nemesis-heart.png"
+                    src={imgNemesisHeart}
                     alt="Mechanical Synthetic Heart Engine"
                     className="w-full h-full object-contain"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
 
@@ -499,10 +507,9 @@ export default function InteractiveShowcase({
                <div className="card-hover-box bg-white border border-zinc-200/80 rounded-2xl p-6 pt-5 flex flex-col justify-between hover:shadow-xl hover:scale-[1.01] transition-all group overflow-hidden relative sm:max-w-xs w-full">
                 <div className="w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 bg-zinc-100 border border-zinc-200">
                   <img
-                    src="/src/assets/images/nemesis_manipulator_arm_1782113680375.jpg"
+                    src={imgManipulatorArm}
                     alt="Precision Robotic Jointed Manipulator Hand close-up"
                     className="w-full h-full object-cover grayscale-[10%] group-hover:scale-105 duration-500 ease-out"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div>
@@ -515,10 +522,9 @@ export default function InteractiveShowcase({
               <div className="card-hover-box bg-white border border-zinc-200/80 rounded-2xl p-6 pt-5 flex flex-col justify-between hover:shadow-xl hover:scale-[1.01] transition-all group overflow-hidden relative sm:max-w-xs w-full">
                 <div className="w-full aspect-[4/3] rounded-xl overflow-hidden mb-6 bg-zinc-100 border border-zinc-200">
                   <img
-                    src="/src/assets/images/human-controller.png"
+                    src={imgHumanController}
                     alt="Human Operator Controller Interface"
                     className="w-full h-full object-cover group-hover:scale-105 duration-500 ease-out"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
                 <div>
@@ -539,10 +545,9 @@ export default function InteractiveShowcase({
         {/* Full screen background deep space image */}
         <div className="absolute inset-0">
           <img
-            src="/src/assets/images/nemesis_space_explorer_1782113701139.jpg"
+            src={imgSpaceExplorer}
             alt="Space Sentinel Android on planet horizon"
             className="w-full h-full object-cover opacity-60 scale-102 select-none pointer-events-none"
-            referrerPolicy="no-referrer"
           />
           {/* Subtle vignette masks for maximum contrast */}
           <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-zinc-950"></div>
@@ -557,7 +562,6 @@ export default function InteractiveShowcase({
             </span>
           </div>
           <h2 className="font-display font-extrabold text-5xl md:text-6xl xl:text-7xl text-zinc-50 tracking-tight leading-none uppercase select-none">
-
             BUILT FOR THE VOID
           </h2>
           
@@ -611,10 +615,9 @@ export default function InteractiveShowcase({
                 </h3>
                 <div className="w-full aspect-[16/10] overflow-hidden rounded-xl border border-zinc-100 bg-zinc-100">
                   <img
-                    src="/src/assets/images/news_robot_factory_1782113747364.jpg"
+                    src={imgNewsFactory}
                     alt="Autonomous robotic assembly line inside factory"
                     className="w-full h-full object-cover group-hover:scale-105 duration-500"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
@@ -633,10 +636,9 @@ export default function InteractiveShowcase({
                 </h3>
                 <div className="w-full aspect-[16/10] overflow-hidden rounded-xl border border-zinc-100 bg-zinc-100">
                   <img
-                    src="/src/assets/images/news_deep_sea_1782113732551.jpg"
+                    src={imgNewsDeepSea}
                     alt="High-tech deep seafloor exploration rover"
                     className="w-full h-full object-cover group-hover:scale-105 duration-500"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
@@ -655,10 +657,9 @@ export default function InteractiveShowcase({
                 </h3>
                 <div className="w-full aspect-[16/10] overflow-hidden rounded-xl border border-zinc-100 bg-zinc-100">
                   <img
-                    src="/src/assets/images/news_collab_nasa_1782113717294.jpg"
+                    src={imgNewsNasa}
                     alt="Control center schematic screen"
                     className="w-full h-full object-cover group-hover:scale-105 duration-500"
-                    referrerPolicy="no-referrer"
                   />
                 </div>
               </div>
